@@ -9,3 +9,5 @@ This is a personal project, the goal of which was to learn Chrome ext. API and c
 ### Next Steps
 * Add ability to modify todo-list from ext. pop-up.
 * Research Google Calendar API for dated todo-items.
+* Drag-and-drop reordering
+* Sub-items
