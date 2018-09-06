@@ -1,7 +1,9 @@
 var list = [];
-chrome.storage.local.get('list', (e) => {
+chrome.storage.sync.get('list', (e) => {
     list = e.list;
     console.log("Loaded existing list: " + list);
+    chrome.runtime.sendMessage({msg: "newtab"});
+    update();
 });
 
 function newItem() {
@@ -20,13 +22,13 @@ function removeItem(e) {
     //chrome.runtime.sendMessage({message: "remove", item: e.target.value});
     const index = list.indexOf(e.target.innerHTML);
     console.log("Removed: " + list[index]);
-    list.splice(list, index);
+    list.splice(index, 1);
     e.target.parentElement.removeChild(e.target);
     update();
 }
 
 function update() {
-    chrome.storage.local.set({'list': list}, () => {
+    chrome.storage.sync.set({'list': list}, () => {
         console.log("Updating List...");
     });
     var ul = document.getElementById("list");

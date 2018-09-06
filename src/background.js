@@ -1,9 +1,11 @@
-// Called when the user clicks on the browser action.
 chrome.runtime.onInstalled.addListener(function() {
-    if(!chrome.storage.local.get(['list'], () => {})) {
-        chrome.storage.local.set({'list': []}, () => {
+    if(!chrome.storage.sync.get(['list'], () => {})) {
+        chrome.storage.sync.set({'list': []}, () => {
             console.log("Initializing list...");
         });
     }
-    console.log("Test");
+    chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+        console.log("Message received: " + request.msg);
+        
+    });
 });
