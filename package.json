@@ -1,0 +1,16 @@
+{
+    "name": "todo_chrome_ext",
+    "version": "0.0.1",
+    "description": "",
+    "scripts": {
+      "pull": "git pull origin master && npm install",
+      "commit": "git add --all && git commit -m"
+    },
+    "author": "Shane Steele-Pardue",
+    "license": "ISC",
+    "dependencies": {
+      "jquery": "^3.2.1"
+    },
+    "devDependencies": {
+    }
+  }
