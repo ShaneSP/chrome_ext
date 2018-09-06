@@ -39,6 +39,7 @@ function update() {
         li.appendChild(document.createTextNode(item));
         ul.appendChild(li);
         document.getElementById("input").value = "";
+        li.className = "draggable";
         li.onclick = removeItem;
     });
 

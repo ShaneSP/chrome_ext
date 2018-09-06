@@ -1,5 +1,5 @@
 html {
-    font-family: "Avenir Next", Helevetica, sans-serif;
+    font-family: "Avenir Next", Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -29,4 +29,10 @@ li {
 
 li:hover {
     text-decoration: line-through;
+}
+
+.droppable {
+    width: 500px;
+    height: 60px;
+    border: 1px;
 }

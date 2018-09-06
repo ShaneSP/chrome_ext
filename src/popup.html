@@ -2,15 +2,32 @@
 <html>
   <head>
     <style>
+      html {
+          font-family: "Avenir Next", Helvetica, sans-serif;
+          text-align: center;
+      }
+
+      input {
+          padding-top: 0px;
+          width: 250px;
+          height: 30px;
+          font-size: 20px;
+          border: 0;
+      }
+
+      input:focus {
+          outline: none;
+      }
+
       button {
-        height: 30px;
-        width: 30px;
-        outline: none;
+          width: 250px;
+          height: 30px;
       }
     </style>
   </head>
   <body>
-    <button id="changeColor"></button>
+    <input id="input">
+    <button id="submit">Add Item</button>
     <script src="popup.js"></script>
   </body>
 </html>
