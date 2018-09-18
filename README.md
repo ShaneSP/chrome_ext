@@ -9,5 +9,7 @@ This is a personal project, the goal of which was to learn Chrome ext. API and c
 
 ### Next Steps
 * Research Google Calendar API for dated todo-items.
-* Drag-and-drop reordering
-* Sub-items
+* Drag-and-drop reordering.
+* Sub-items.
+* Optional todo-list access in the popup.
+* Convert to React (check out React library ex.)
