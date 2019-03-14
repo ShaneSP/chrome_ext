@@ -1,5 +1,7 @@
+import { TodoItem } from "./todo";
+
 let addButton = document.getElementById('submit');
-let submit = document.getElementById("input");
+let submit: HTMLInputElement = document.getElementById("input") as HTMLInputElement;
 let list = [];
 chrome.storage.sync.get('list', (e) => {
     list = e.list;
@@ -18,8 +20,8 @@ document.body.onkeyup = function (e) {
 }
 
 function newItem() {
-    if(submit.value != "") {
-        var item = submit.value;
+    if(submit.value.length != 0) {
+        var item = new TodoItem(submit.value, false);
         list[list.length] = item;
         submit.value = "";
         chrome.storage.sync.set({'list': list}, () => {

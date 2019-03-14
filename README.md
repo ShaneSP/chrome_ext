@@ -9,7 +9,10 @@ This is a personal project, the goal of which was to learn Chrome ext. API and c
 
 ### Next Steps
 * Research Google Calendar API for dated todo-items.
+* Add Spotify Web Player SDK interaction.
 * Drag-and-drop reordering.
 * Sub-items.
 * Optional todo-list access in the popup.
 * Convert to React (check out React library ex.)
+* Daily view vs. Roadmap view
+  * Daily: goals + schedule

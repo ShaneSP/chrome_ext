@@ -1,24 +1,24 @@
 {
     "manifest_version": 2,
     "name": "Todo-List Ext.",
-    "version": "0.1",
+    "version": "0.7.0",
     "permissions": ["activeTab","declarativeContent","storage"],
-    "options_page": "src/options.html",
+    "options_page": "options.html",
     "chrome_url_overrides": {
-        "newtab": "src/todo.html"
+        "newtab": "todo.html"
     },
     "background": {
         "persistent": false,
-        "scripts": ["src/background.js"]
+        "scripts": ["js/background.js"]
     },
     "content_scripts": [
         {
           "matches": ["<all_urls>"],
-          "js": ["node_modules/jquery/dist/jquery.slim.js"]
+          "js": ["js/content_script.js"]
         }
       ],
     "browser_action": {
         "default_icon": "icon.png",
-        "default_popup": "src/popup.html"
+        "default_popup": "popup.html"
     }
 }
