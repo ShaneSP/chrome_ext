@@ -3,6 +3,8 @@
 ### About
 This is a personal project, the goal of which was to learn Chrome Extension API and create a Chrome tool that I can add functionality to as I would like. For now, I am interested in expanding the todo-list functionality. However, I have some ideas for other helpful tools I can add later.
 
+[Try it out!](https://chrome.google.com/webstore/detail/todo-list-ext/fjdljbfpfflefaddgkhhangmcanbibgo)
+
 ### Functionality
 * Add and remove items on a todo-list.
 * Add items to todo-list from ext. pop-up.
